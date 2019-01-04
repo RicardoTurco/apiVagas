@@ -1,0 +1,21 @@
+## Django ##
+*.log
+*.pot
+*.pyc
+
+
+__pycache__/
+
+
+db.sqlite3
+
+
+
+## Linux ##
+*~
+
+.idea
+
+
+## Virtualenv (atual) ##
+venv/
