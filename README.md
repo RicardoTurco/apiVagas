@@ -1,15 +1,29 @@
 # apiVagas
-Minha primeira API com Django REST Framework
 
-Esta API foi "originalmente" desenvolvida em: 12/11/2018 e
-e o repositório foi REESTRUTURADO em: 04/01/2019
+My first API with Django REST Framework
 
-API criada em "ambiente Linux: Ubuntu
+This API was originally "developed on: 11/11/2018 and
+the repository was restructured on 04/01/2019
 
-banco: SQLite3
+API created in "environment" Linux: Ubuntu
 
 Python: 3.6.7  / 
 
 Django: 1.11.7  / 
 
 Django REST Framework: 3.7.3
+
+
+# Road Map:
+
+Create and activate VENV
+
+pip install -r requirements.txt
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver
