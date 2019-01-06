@@ -20,7 +20,7 @@ class VagasList(APIView):
             serializer = VagaSerializer(result_page, many=True)
             return paginator.get_paginated_response(serializer.data)
         except Exception:
-            return JsonResponse({'mensagem': "Ocorreu um erro no servidor"},
+            return JsonResponse({'message': "Server Error."},
                                 status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def post(self, request):
@@ -31,7 +31,7 @@ class VagasList(APIView):
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         except Exception:
-            return JsonResponse({'mensagem': "Ocorreu um erro no servidor"},
+            return JsonResponse({'message': "Server Error."},
                                 status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
@@ -39,22 +39,22 @@ class VagaDetalhes(APIView):
     def get(self, request, pk):
         try:
             if pk == "0":
-                return JsonResponse({'mensagem': "O ID deve ser maior que zero"},
+                return JsonResponse({'message': "ID must be greater than zero."},
                                     status=status.HTTP_400_BAD_REQUEST)
             vaga = Vaga.objects.get(pk=pk)
             serializer = VagaSerializer(vaga)
             return Response(serializer.data)
         except Vaga.DoesNotExist:
-            return JsonResponse({'mensagem': "A vaga não existe"},
+            return JsonResponse({'message': "Vaga not exist."},
                                 status=status.HTTP_404_NOT_FOUND)
         except Exception:
-            return JsonResponse({'mensagem': "Ocorreu um erro no servidor"},
+            return JsonResponse({'message': "Server Error."},
                                 status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def put(self, request, pk):
         try:
             if pk == "0":
-                return JsonResponse({'mensagem': "O ID deve ser maior que zero."},
+                return JsonResponse({'message': "ID must be greater than zero."},
                                      status=status.HTTP_400_BAD_REQUEST)
             vaga = Vaga.objects.get(pk=pk)
             serializer = VagaSerializer(vaga, data-request.data)
@@ -63,23 +63,23 @@ class VagaDetalhes(APIView):
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         except Vaga.DoesNotExist:
-            return JsonResponse({'mensagem': "A vaga não existe"},
+            return JsonResponse({'message': "Vaga not exist."},
                                 status=status.HTTP_404_NOT_FOUND)
         except Exception:
-            return JsonResponse({'mensagem': "Ocorreu um erro no servidor"},
+            return JsonResponse({'message': "Server Error."},
                                 status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def delete(self, request, pk):
         try:
             if pk == "0":
-                return JsonResponse({'mensagem': "O ID deve ser maior que zero"},
+                return JsonResponse({'message': "ID must be greater than zero."},
                                     status=status.HTTP_400_BAD_REQUEST)
             vaga = Vaga.objects.get(pk=pk)
             vaga.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Vaga.DoesNotExist:
-            return JsonResponse({'mensagem': "A vaga não existe"},
+            return JsonResponse({'message': "Vaga not exist."},
                                 status=status.HTTP_404_NOT_FOUND)
         except Exception:
-            return JsonResponse({'mensagem': "Ocorreu um erro no servidor"},
+            return JsonResponse({'message': "Server Error."},
                                 status=status.HTTP_500_INTERNAL_SERVER_ERROR)
