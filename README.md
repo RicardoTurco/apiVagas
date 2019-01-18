@@ -33,12 +33,29 @@ python manage.py runserver
 
 GET: (paging of 2 records was used for example only)
 
+(sending ....)
 ![](IMGs/001_Get_A.png)
 
+(receiving ...)
 ![](IMGs/001_Get_B.png)
 
 
 
+GET by ID:
 
+(receiving ...)
+![](IMGs/002_GetByID.png)
+
+
+ ADDING NEW VAGA:
+
+(sending ....)
+![](IMGs/003_Post_A.png)
+
+(sending ....)
+![](IMGs/003_Post_B.png)
+
+(receiving ...)
+![](IMGs/003_Post_C.png)
 
 
