@@ -1,6 +1,6 @@
 # apiVagas
 
-My first API with Django REST Framework
+API with Django REST Framework
 
 This API was originally "developed on: 11/11/2018 and
 the repository was restructured on 04/01/2019
@@ -12,6 +12,9 @@ Python: 3.6.7  /
 Django: 1.11.7  / 
 
 Django REST Framework: 3.7.3
+
+For more informations:
+https://gist.github.com/RicardoTurco/2deadb56ea4c422f43d465abfa349846
 
 
 # Road Map:
