@@ -57,7 +57,7 @@ class VagaDetalhes(APIView):
                 return JsonResponse({'message': "ID must be greater than zero."},
                                      status=status.HTTP_400_BAD_REQUEST)
             vaga = Vaga.objects.get(pk=pk)
-            serializer = VagaSerializer(vaga, data-request.data)
+            serializer = VagaSerializer(vaga, request.data)
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data)
