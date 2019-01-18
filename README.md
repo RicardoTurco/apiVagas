@@ -1,6 +1,6 @@
 # apiVagas
 
-API with Django REST Framework
+This is a simple API, that is, we do not use ALL the concepts called "default" by most developers.
 
 This API was originally "developed on: 11/11/2018 and
 the repository was restructured on 04/01/2019
@@ -12,9 +12,6 @@ Python: 3.6.7  /
 Django: 1.11.7  / 
 
 Django REST Framework: 3.7.3
-
-For more informations:
-https://gist.github.com/RicardoTurco/2deadb56ea4c422f43d465abfa349846
 
 
 # Road Map:
@@ -30,3 +27,18 @@ python manage.py migrate
 python manage.py createsuperuser
 
 python manage.py runserver
+
+
+# Available Endpoints: (considering that the API is running locally)
+
+GET: (paging of 2 records was used for example only)
+
+![](IMGs/001_Get_A.png)
+
+![](IMGs/001_Get_B.png)
+
+
+
+
+
+
