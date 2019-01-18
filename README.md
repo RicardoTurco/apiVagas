@@ -13,6 +13,9 @@ Django: 1.11.7  /
 
 Django REST Framework: 3.7.3
 
+For more informations:
+https://gist.github.com/RicardoTurco/2deadb56ea4c422f43d465abfa349846
+
 
 # Road Map:
 
