@@ -47,7 +47,7 @@ GET by ID:
 ![](IMGs/002_GetByID.png)
 
 
- ADD NEW VAGA:
+ADD NEW VAGA:
 
 (sending ....)
 ![](IMGs/003_Post_A.png)
@@ -69,3 +69,12 @@ UPDATE Vaga by ID:
 
 (receiving ....)
 ![](IMGs/004_Put_C.png)
+
+
+DELETE Vaga by ID:
+
+(sending ....)
+![](IMGs/005_Delete_A.png)
+
+(receiving ....)
+![](005_Delete_B.png)
