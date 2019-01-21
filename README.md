@@ -77,4 +77,4 @@ DELETE Vaga by ID:
 ![](IMGs/005_Delete_A.png)
 
 (receiving ....)
-![](005_Delete_B.png)
+![](IMGs/005_Delete_B.png)
