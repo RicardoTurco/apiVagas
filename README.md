@@ -29,6 +29,10 @@ python manage.py createsuperuser
 python manage.py runserver
 
 
+# Access in your browser:
+
+localhost:8000/api/vagas
+
 # Available Endpoints: (considering that the API is running locally)
 
 GET: (paging of 2 records was used for example only)
