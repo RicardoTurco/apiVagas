@@ -7,11 +7,11 @@ the repository was restructured on 04/01/2019
 
 API created in "environment" Linux: Ubuntu
 
-Python: 3.6.7  / 
+Python: 3.7.3  / 
 
-Django: 1.11.7  / 
+Django: 3.0.3  / 
 
-Django REST Framework: 3.7.3
+Django REST Framework: 3.11.0
 
 
 # Road Map:
